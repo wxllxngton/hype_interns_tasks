@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "username": "Jane Smith",
+            "userInitials": "JS",
+            "postTime": "3 hours ago",
+            "postType": "public",
+            "postContent": "Excited to announce my new e-commerce platform. Let me know your thoughts! 🎁🛒",
+            "imageSrc": "https://img.freepik.com/premium-vector/ecommerce-project-banner-landing-page-template-website_541075-1532.jpg?w=740",
+            "likes": 230,
+            "comments": 45
+        },
+        {
+            "id": 2,
+            "username": "Mike Brown",
+            "userInitials": "MB",
+            "postTime": "5 hours ago",
+            "postType": "private",
+            "postContent": "Working on an AI/ML project to predict stock prices. Suggestions are welcome! 📈",
+            "imageSrc": "https://images.datacamp.com/image/upload/v1682075442/An_AI_juggles_tasks_9641a41756.png",
+            "likes": 154,
+            "comments": 32
+        },
+        {
+            "id": 3,
+            "username": "Alice Green",
+            "userInitials": "AG",
+            "postTime": "1 day ago",
+            "postType": "public",
+            "postContent": "Redesigned my blog! Check it out and share your feedback. ✍️",
+            "imageSrc": "https://img.freepik.com/free-photo/online-blog_53876-123696.jpg?t=st=1733925312~exp=1733928912~hmac=40fc00f88924bea01db1f3c99dd034606e527d8164413a8c464f5a51e80a4d07&w=740",
+            "likes": 412,
+            "comments": 89
+        },
+        {
+            "id": 4,
+            "username": "Chris White",
+            "userInitials": "CW",
+            "postTime": "2 days ago",
+            "postType": "public",
+            "postContent": "Built a mobile app for fitness tracking. Features include step counting, calorie tracking, and more! 🏃‍♂️",
+            "imageSrc": "https://cdn.sanity.io/images/ordgikwe/production/24553ef24e8e98af8fcc6b0f876ec6d343faa212-1600x1200.jpg?rect=0,0,1599,1200&w=1366&h=1025&auto=format",
+            "likes": 342,
+            "comments": 78
+        },
+        {
+            "id": 5,
+            "username": "Linda Black",
+            "userInitials": "LB",
+            "postTime": "3 days ago",
+            "postType": "private",
+            "postContent": "Exploring the potential of blockchain in supply chain management. 🤔",
+            "imageSrc": "https://img.freepik.com/free-vector/flat-design-cryptocurrencies-app-template_23-2151084906.jpg?t=st=1733925400~exp=1733929000~hmac=18d98bebfd7849c12dc3949dcf16bca14f3dde154d870ff2f8ccdfd24aaa5b10&w=740",
+            "likes": 287,
+            "comments": 63
+        }
+    ]
+}
