@@ -22,7 +22,10 @@ export const ProfileDropdown: React.FC = () => {
     }, []);
 
     return (
-        <div ref={dropdownRef} className="relative">
+        <div
+            ref={dropdownRef}
+            className="relative transition-all duration-300 animate-fade-in"
+        >
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center space-x-2 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -35,7 +38,7 @@ export const ProfileDropdown: React.FC = () => {
                 </span>
             </button>
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
+                <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 transition-all duration-300 animate-fade-in">
                     <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
                         <div className="font-medium ">👑</div>
                         <div className="truncate">bonnie@green.com</div>
@@ -46,7 +49,7 @@ export const ProfileDropdown: React.FC = () => {
                     >
                         <li>
                             <a
-                                href="/settings"
+                                href="/profile"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                             >
                                 Profile

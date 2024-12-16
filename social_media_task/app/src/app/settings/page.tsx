@@ -156,12 +156,12 @@ export default function SettingsPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <div className="min-h-screen bg-gradient-to-r from-indigo-800 to-blue-900 min-h-screen text-gray-900 dark:text-gray-100">
             {/* Top Navigation */}
             <NavBar />
 
             {/* Main Content */}
-            <main className="max-w-2xl mx-auto pt-20 pb-16 px-4">
+            <main className="max-w-2xl mx-auto pt-20 pb-16 px-4 ">
                 <div
                     id="settings-container"
                     className="dropdown-menu animate-fade z-10 relative rounded-lg shadow-lg p-4 bg-white dark:bg-gray-800"

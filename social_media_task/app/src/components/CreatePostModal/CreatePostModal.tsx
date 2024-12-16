@@ -4,7 +4,7 @@ export const CreatePostModal: React.FC<{
     toggleCreatePostModal: () => void;
 }> = ({ toggleCreatePostModal }) => {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div className="transition-all duration-300 animate-fade-in fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
             <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full">
                 <div className="p-4 border-b border-gray-200 dark:border-gray-700">
                     <h2 className="text-lg font-semibold">Create a new post</h2>

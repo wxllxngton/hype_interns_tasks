@@ -22,7 +22,10 @@ export const NotificationDropdown: React.FC = () => {
     }, []);
 
     return (
-        <div ref={dropdownRef} className="relative">
+        <div
+            ref={dropdownRef}
+            className="relative transition-all duration-300 animate-fade-in"
+        >
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -31,7 +34,7 @@ export const NotificationDropdown: React.FC = () => {
                 <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
             </button>
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
+                <div className="transition-all duration-300 animate-fade-in absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                     <ul>
                         {/* Notification Items */}
                         {notifications.map((notification, index) => (

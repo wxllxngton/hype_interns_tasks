@@ -16,7 +16,7 @@ export const BottomNavBar: React.FC<{ toggleCreatePostModal: () => void }> = ({
     toggleCreatePostModal,
 }) => {
     return (
-        <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+        <nav className="transition-all duration-300 animate-fade-in fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center justify-around h-16">
                     <Link

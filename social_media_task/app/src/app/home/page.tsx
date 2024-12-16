@@ -22,14 +22,14 @@ export default function HomePage() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <div className="min-h-screen bg-gradient-to-r from-indigo-800 to-blue-900 min-h-screen text-gray-900 dark:text-gray-100">
             {/* Top Navigation */}
             <NavBar />
 
             {/* Main Content */}
             <main className="max-w-2xl mx-auto pt-20 pb-16 px-4">
                 {/* News Feed */}
-                <div className="space-y-6">
+                <div className="space-y-6 ">
                     {file.projects?.length > 0 ? (
                         file.projects.map((project) => (
                             <div
