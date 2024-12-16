@@ -1,7 +1,7 @@
 'use-client';
 
 import { useEffect, useState } from 'react';
-import { Bell, Sun, Moon } from 'lucide-react';
+import { Bell, Sun, Moon, Link } from 'lucide-react';
 import { changeTheme } from '@/config/helpers';
 import { NotificationDropdown } from '../Dropdowns/NotificationDropdown';
 import { ProfileDropdown } from '../Dropdowns/ProfileDropdown';
@@ -27,9 +27,12 @@ export const NavBar: React.FC = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
-                    <h1 className="text-xl font-bold text-black dark:text-slate-300">
+                    <a
+                        href="/"
+                        className="text-xl font-bold text-black dark:text-slate-300"
+                    >
                         NextConnect
-                    </h1>
+                    </a>
                     <div className="flex items-center space-x-4">
                         <button
                             id="themeToggle"
