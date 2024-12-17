@@ -30,24 +30,24 @@ export default function HomePage() {
             <main className="max-w-2xl mx-auto pt-20 pb-16 px-4">
                 {/* News Feed */}
                 <div className="space-y-6 ">
-                    {file.projects?.length > 0 ? (
-                        file.projects.map((project) => (
+                    {file.posts?.length > 0 ? (
+                        file.posts.map((post) => (
                             <div
-                                key={project.id}
+                                key={post.id}
                                 className="bg-white dark:bg-gray-800 rounded-lg shadow"
                             >
                                 <div className="p-4 flex items-center space-x-4">
                                     <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
                                         <span className="text-sm font-medium">
-                                            {project.userInitials}
+                                            {post.userInitials}
                                         </span>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold dark:text-slate-300">
-                                            {project.username}
+                                            {post.username}
                                         </h3>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                                            {project.postTime} ·{' '}
+                                            {post.postTime} ·{' '}
                                             <Globe className="inline h-4 w-4" />
                                         </p>
                                     </div>
@@ -57,10 +57,10 @@ export default function HomePage() {
                                 </div>
                                 <div className="px-4 pb-4">
                                     <p className="text-gray-600 dark:text-gray-300">
-                                        {project.postContent}
+                                        {post.postContent}
                                     </p>
                                     <img
-                                        src={project.imageSrc}
+                                        src={post.imageSrc}
                                         alt="Post preview"
                                         className="mt-4 rounded-lg w-full object-cover h-64"
                                     />
@@ -68,11 +68,11 @@ export default function HomePage() {
                                 <div className="px-4 py-4 border-t border-gray-200 dark:border-gray-700 flex justify-between">
                                     <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-600">
                                         <Heart className="h-5 w-5" />
-                                        <span>{project.likes}</span>
+                                        <span>{post.likes}</span>
                                     </button>
                                     <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-600">
                                         <MessageCircle className="h-5 w-5" />
-                                        <span>{project.comments}</span>
+                                        <span>{post.comments}</span>
                                     </button>
                                     <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-600">
                                         <Share2 className="h-5 w-5" />
