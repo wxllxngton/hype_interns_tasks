@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import HomePage from './home/page';
+import LandingPage from './LandingPage';
 
 export const metadata: Metadata = {
     title: 'NextConnect',
@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function App() {
-    return <HomePage />;
+    return (
+        <>
+            <LandingPage />
+        </>
+    );
 }

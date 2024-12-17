@@ -49,14 +49,6 @@ export const ProfileDropdown: React.FC = () => {
                     >
                         <li>
                             <a
-                                href="/profile"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                            >
-                                Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 href="/settings"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                             >
