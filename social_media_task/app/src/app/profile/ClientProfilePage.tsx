@@ -159,7 +159,7 @@ export default function ClientProfilePage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
-                                John Doe
+                                Bonnie Green
                             </motion.h1>
                             <motion.p
                                 className="text-gray-600 dark:text-gray-300 mt-2"

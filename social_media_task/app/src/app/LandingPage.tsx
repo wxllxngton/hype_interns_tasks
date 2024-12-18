@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Users, MessageCircle, Zap, DoorOpen, Menu } from 'lucide-react';
-import { useState } from 'react';
+import { Users, MessageCircle, Zap, DoorOpen, User } from 'lucide-react';
+import Link from 'next/link';
 
 const featureData = [
     {
@@ -29,27 +29,26 @@ export default function LandingPage() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-indigo-100 to-white text-gray-900">
             {/* Header */}
-            <header className="sticky top-0 container mx-auto px-4 py-4 flex justify-between items-center fixed  left-0 right-0 z-50 bg-background/80 backdrop-blur-md  duration-200">
+            <header className="sticky top-0 container mx-auto px-4 py-4 flex justify-between items-center bg-background/80 backdrop-blur-md z-50 shadow-md">
                 <h1 className="text-2xl font-bold text-indigo-600">
                     NextConnect
                 </h1>
-
-                {/* Navigation */}
-                <nav
-                    className={`lg:block absolute lg:relative top-16 left-0 lg:top-0 bg-white lg:bg-transparent w-full lg:w-auto shadow-lg lg:shadow-none`}
-                >
-                    <ul className="flex flex-col lg:flex-row lg:space-x-6 items-center lg:items-center p-4 lg:p-0">
-                        <li>
-                            <a
-                                href="/auth"
-                                className="block px-4 py-2 lg:py-0 flex items-center text-indigo-600 hover:text-indigo-700 transition-colors"
-                            >
-                                <DoorOpen className="w-5 h-5 mr-1" />
-                                Login
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div className="flex flex-row justify-between">
+                    <Link
+                        href="/auth"
+                        className="flex items-center text-indigo-600 hover:text-indigo-700 transition-colors px-4 py-2"
+                    >
+                        <DoorOpen className="w-5 h-5 mr-2" />
+                        <span className="hidden sm:inline">Login</span>
+                    </Link>
+                    <Link
+                        href="/profile"
+                        className="flex items-center text-indigo-600 hover:text-indigo-700 transition-colors px-4 py-2"
+                    >
+                        <User className="w-5 h-5 mr-2" />
+                        <span className="hidden sm:inline">Profile</span>
+                    </Link>
+                </div>
             </header>
 
             {/* Hero Section */}

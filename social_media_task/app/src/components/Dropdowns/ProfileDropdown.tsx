@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Bell } from 'lucide-react';
+import Link from 'next/link';
 
 export const ProfileDropdown: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -48,12 +49,12 @@ export const ProfileDropdown: React.FC = () => {
                         aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton"
                     >
                         <li>
-                            <a
+                            <Link
                                 href="/settings"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                             >
                                 Settings
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="py-2">
